@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../bootstrap5/css/bootstrapValidator0.5.3.min.css">
     <link rel="stylesheet" href="../../bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+    
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../../css/style.css">
     <!-- <link rel="stylesheet" href="../../css/colorValida.css"> -->
@@ -22,7 +22,7 @@
 <hr>
 <div class="container">
 
-    <body class="bg-dark">
+    <body class="bg-dark ">
 
         <header>
             <div class="text-center">
@@ -106,10 +106,10 @@
                         </ul>
                         </li>
                                 <li>
-                                    <a href="#submenu5" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                                         <!-- <i class="fs-4 bi-grid"></i> --> <i class="bi bi-journal-text"></i>  <span class="ms-1 d-none d-sm-inline">Tp2</span>
                                     </a>
-                                    <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#menu">
+                                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                         <!-- <li class="w-100">
                                                 <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
                                         </li>  -->
@@ -138,6 +138,34 @@
                                 </li>
                                 <li>
                                     <a href="../../tp3/eje3/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 3</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
+                                </li> -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#submenu5" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <!-- <i class="fs-4 bi-grid"></i> --> <i class="bi bi-journal-text"></i>  <span class="ms-1 d-none d-sm-inline">Tp4</span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#menu">
+                                <!-- <li class="w-100">
+                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                                    </li> -->
+                                <li>
+                                    <a href="../../tp4/ejemplo/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejemplo</span> </a>
+                                </li>
+                                <li>
+                                    <a href="../../tp4/eje1/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 1</a>
+                                </li>
+                                <li>
+                                    <a href="../../tp4/eje2/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 2</a>
                                 </li>
                                 <!-- <li>
                                     <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>

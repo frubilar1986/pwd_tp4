@@ -2,7 +2,7 @@
 
 /* Estilos css */
 
-/* body{
+body{
     margin: 0;
     
     background-repeat: no-repeat;
@@ -11,7 +11,11 @@
     background-position: center;
     background-attachment: fixed;
    
-} */
+}
+/* imagenes de fondo para cada pagina */
+.body_home{
+  background-image: url('../../../../img/fondo_pwd.jpg');
+}
 
 body::before{
     content: '';

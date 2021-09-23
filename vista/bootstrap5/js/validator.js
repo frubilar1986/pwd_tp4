@@ -9,7 +9,7 @@ $(function () {
 
             invalid: 'fa fa-times has-error help-block',
 
-            validating: 'fa fa-circle yessss'
+            validating: 'fa fa-circle '
 
         },
 

@@ -23,7 +23,7 @@ include_once "../../estructHtml/cabecera.php";
                         $data = datos_submitidos();
                         // echo '<br>en accion<br>';
                         // print_r($data);
-                        $obj = new tp2_ctrol_eje3();
+                        $obj = new ctrol_tp2_eje3();
                         $resp = $obj->accion($data);
                         // $obj5 = new ctrol_eje5();
                         // $obj6 = new ctrol_eje6();
