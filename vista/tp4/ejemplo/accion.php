@@ -17,8 +17,11 @@ include_once "../../estructHtml/cabecera.php";
                         <?php
                             $resp = false;
                             $datosForm = datos_submitidos();
-                            print_r($datosForm);
+                            // print_r($datosForm);
+                            // echo '<br>';
                             $obj = new ctrol_tp4_ejem();
+                            // $col = $obj->buscar($datosForm);
+                            // print_r($col);
                             if (isset($datosForm['accion'])) {
                                 if ($datosForm['accion'] == 'editar') {
                                     if($obj->modificacion($datosForm)){

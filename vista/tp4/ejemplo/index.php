@@ -17,6 +17,9 @@ $listaDatos = $objAbmTabla->buscar(null);
                     <!-- aqui tabla de seleccion de datos recuperados o que persisten desde la base de dato test -->
                     <p class='h3 text-info text-center'>Lista de datos</p>
                     <table class="table table-success table-hover ">
+                        <th>Descripcion</th>
+                        <th>Modificar</th>
+                        <th>Eliminar registro</th>
                         <?php 
                             if (count($listaDatos) > 0){
                                 foreach($listaDatos as $objDatos){

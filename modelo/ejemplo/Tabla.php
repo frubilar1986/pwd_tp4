@@ -116,6 +116,7 @@ class Tabla {
     }
     
     public static function listar($parametro=""){
+        
         $arreglo = array();
         $base=new BaseDatos();
         $sql="SELECT * FROM tabla ";
@@ -135,7 +136,7 @@ class Tabla {
             }
             
         } else {
-            $this->setmensajeoperacion("Tabla->listar: ".$base->getError());
+            // $this->setmensajeoperacion("Tabla->listar: ".$base->getError());
         }
  
         return $arreglo;

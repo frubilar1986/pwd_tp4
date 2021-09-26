@@ -1,19 +1,20 @@
 <?php
-class ctrol_tp4_ejem{
+class ctrol_tp4_abmPersona{
     //Espera como parametro un arreglo asociativo donde las claves coinciden con los nombres de las variables instancias del objeto
 
     
     /**
      * Espera como parametro un arreglo asociativo donde las claves coinciden con los nombres de las variables instancias del objeto
      * @param array $param
-     * @return Tabla
+     * @return Persona
      */
     private function cargarObjeto($param){
         $obj = null;
            
-        if( array_key_exists('id',$param) and array_key_exists('descript',$param)){
-            $obj = new Tabla();
-            $obj->setear($param['id'], $param['descript']);
+        if( array_key_exists('nroDni',$param) and array_key_exists('apellido',$param) and array_key_exists('nombre',$param) and array_key_exists('fechaNac',$param) and array_key_exists('telefono',$param) and array_key_exists('domicilio',$param)){
+            $obj = new Persona();
+
+            $obj->setear($param['nroDni'], $param['apellido'], $param['nombre'], $param['fechaNac'], $param['telefono'], $param['domicilio']);
         }
         return $obj;
     }
@@ -26,9 +27,9 @@ class ctrol_tp4_ejem{
     private function cargarObjetoConClave($param){
         $obj = null;
         
-        if( isset($param['id']) ){
-            $obj = new Tabla();
-            $obj->setear($param['id'], null);
+        if( isset($param['nroDni']) ){
+            $obj = new Persona();
+            $obj->setear($param['nroDni'], null,null,null,null,null,null);
         }
         return $obj;
     }
@@ -42,7 +43,7 @@ class ctrol_tp4_ejem{
     
     private function seteadosCamposClaves($param){
         $resp = false;
-        if (isset($param['id']))
+        if (isset($param['nroDni']))
             $resp = true;
         return $resp;
     }
@@ -53,12 +54,14 @@ class ctrol_tp4_ejem{
      */
     public function alta($param){
         $resp = false;
-        $param['id'] = null;
+        var_dump($param);
+        //$param['id'] = null;
         $elObjtTabla = $this->cargarObjeto($param);
-       //print_r($elObjtTabla);
+       print_r($elObjtTabla);
 //        verEstructura($elObjtTabla);
         if ($elObjtTabla !=null and $elObjtTabla->insertar()){
             $resp = true;
+            echo"verredadero";
         }
         return $resp;
         
@@ -86,7 +89,7 @@ class ctrol_tp4_ejem{
      * @return boolean
      */
     public function modificacion($param){
-        //echo "Estoy en modificacion";
+        echo "Estoy en modificacion";
         $resp = false;
         if ($this->seteadosCamposClaves($param)){
             $elObjtTabla = $this->cargarObjeto($param);
@@ -100,17 +103,21 @@ class ctrol_tp4_ejem{
     /**
      * permite buscar un objeto
      * @param array $param
-     * @return boolean
+     * @return array
      */
-    public function buscar($param){
+     public function buscar($param){
         $where = " true ";
         if ($param <> NULL){
-            if  (isset($param['id']))
-                $where.=" and id =".$param['id'];
-            if  (isset($param['descript']))
-                 $where.=" and descrip ='".$param['descript']."'";
+            if  (isset($param['NroDni']))
+                $where.=" and NroDni = '".$param['NroDni']."'";
+            if  (isset($param['apellido']))
+                 $where.=" and Apellido ='".$param['apellido']."'";
+            if  (isset($param['nombre']))
+                 $where.=" and nombre ='".$param['nombre']."'";
+            if  (isset($param['fechaNac']))
+                 $where.=" and fechaNac ='".$param['fechaNac']."'";
         }
-        $arreglo = Tabla::listar($where);  
+        $arreglo = Persona::listar($where);  
         return $arreglo;
             
             
@@ -119,4 +126,3 @@ class ctrol_tp4_ejem{
     }
     
 }
-?>

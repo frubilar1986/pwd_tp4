@@ -19,25 +19,7 @@ include_once "../../estructHtml/cabecera.php";
                                 <div class="valid-feedback">OK!</div>
                                 <div class="invalid-feedback">Campo requerido !!</div>
                             </div>
-                            <!-- <div class="col-md-4 mb-3">
-                                <label for="lbl-ape">Apellido:</label>
-                                <input type="text" class="form-control" name="ape" id="ape" placeholder="Ing apellido" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div>
-                            
-                            <div class="col-md-4 mb-3">
-                                <label for="lbl-nro">Edad:</label>
-                                <input type="number" class="form-control" min="1" max="80" name="edad" id="edad" placeholder="Ing edad" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="lbl-nro">Domicilio:</label>
-                                <input type="text" class="form-control" name="domic" id="domic" placeholder="Ing domicilio" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div> -->
+                           
 
                         </div>
                         <button class="col-md-12 mt=3 mb-2 btn btn-primary" type="submit">Enviar</button>

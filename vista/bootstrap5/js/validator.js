@@ -889,6 +889,205 @@ $(function () {
         }
 
     }) //fin validators de tp3eje3   
+    $('#tp4Eje4').bootstrapValidator({
+        message:'error de carga',
+        feedbackIcons:{
+                valid:'far fa-check-circle has-success help-success',
 
+                invalid: 'fa fa-times has-error help-block',
+    
+                validating: 'fa fa-circle '
+        },
+        fields:{
+            patente:{
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Cumplir formato AAA 999 <br>'
+                    },
+                    stringLength:{
+                        max:7,
+                        message:'Debe tener 6 caracteres'
+                    }
+                }
+            }
+        },
+    });
+    $('#tp4Eje6').bootstrapValidator({
+        message:'error de carga',
+        feedbackIcons:{
+                valid:'far fa-check-circle has-success help-success',
+
+                invalid: 'fa fa-times has-error help-block',
+    
+                validating: 'fa fa-circle '
+        },
+        fields:{
+            nroDni:{
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Solo numeros <br>'
+                    },
+                    stringLength:{
+                        max:8,
+                        message:'No Debe tener mas de 8 numeros'
+                    },
+                    
+                },
+
+            },
+            apellido:{
+                validators:{
+                    notEmpty:{
+                        message:"No debe estar vacio"
+                    },
+                    regexp:{
+                        message:"Solo letras"
+                    }
+                }
+            },
+            nombre:{
+                validators:{
+                    notEmpty:{
+                        message:"No debe estar vacio"
+                    },
+                    regexp:{
+                        message:"Solo letras"
+                    }
+                }
+            },
+            telefono:{
+                validators:{
+                    notEmpty:{
+                        message:"No debe estar vacio"
+                    },
+                    regexp:{
+                        message:"Solo Solo numeros"
+                    }
+                }
+            },
+            fechaNac:{
+                validators:{
+                    notEmpty:{
+                        message:"No debe estar vacio"
+                    },
+                    
+                }
+            },
+            domicilio:{
+                validators:{
+                    notEmpty:{
+                        message:"No debe estar vacio"
+                    },
+                    regexp:{
+                        message:"Solo numeros y letras"
+                    }
+                }
+            },
+            
+        },
+    });
+    $('#tp4Eje7').bootstrapValidator({
+        message:'error de carga',
+        feedbackIcons:{
+                valid:'far fa-check-circle has-success help-success',
+
+                invalid: 'fa fa-times has-error help-block',
+    
+                validating: 'fa fa-circle '
+        },
+        fields:{
+            patente:{
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Cumplir formato AAA 999 <br>'
+                    },
+                    stringLength:{
+                        max:7,
+                        message:'Debe tener 6 caracteres'
+                    }
+                }
+            },
+            marca:{
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Solo letras <br>'
+                    },
+                    
+                }
+            },
+            modelo:{
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Solo letras y numeros <br>'
+                    },
+                    
+                }
+            },
+            dniDuenio:{
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Solo  numeros <br>'
+                    },
+                    
+                }
+            },
+            
+        },
+    });
+    $('#tp4Eje8').bootstrapValidator({
+        message:'error de carga',
+        feedbackIcons:{
+                valid:'far fa-check-circle has-success help-success',
+
+                invalid: 'fa fa-times has-error help-block',
+    
+                validating: 'fa fa-circle '
+        },
+        fields:{
+            patente:{
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Cumplir formato AAA 999 <br>'
+                    },
+                    stringLength:{
+                        max:7,
+                        message:'Debe tener 6 caracteres'
+                    }
+                }
+            },
+            dniPersona:{
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Solo  numeros <br>'
+                    },
+                    
+                }
+            },
+        },
+    });
 
 }); //fin funcion bootstrapValidator!

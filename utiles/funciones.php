@@ -31,7 +31,7 @@ spl_autoload_register(function($clase){
     //echo "carga de de clase ".$clase."<br>";
     $directorios = array(
         $GLOBALS['ROOT'].'modelo/',
-        $GLOBALS['ROOT'].'modelo/ejemplo/', //para ejercicio PDO ejemplo
+        $GLOBALS['ROOT'].'modelo/ejemplo/', //omr para ejercicio PDO ejemplo
         $GLOBALS['ROOT'].'control/',
     );
     //print_r($directorios);

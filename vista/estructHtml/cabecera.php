@@ -139,6 +139,7 @@
                                 <li>
                                     <a href="../../tp3/eje3/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 3</a>
                                 </li>
+                                
                                 <!-- <li>
                                     <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
                                 </li>
@@ -159,13 +160,28 @@
                                         <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
                                     </li> -->
                                 <li>
-                                    <a href="../../tp4/ejemplo/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejemplo</span> </a>
+                                    <a href="../../tp4/ejemplo/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejemplo </span> </a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje1/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 1</a>
+                                    <a href="../../tp4/eje3/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio </span>3</a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje2/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 2</a>
+                                    <a href="../../tp4/eje4/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio </span>4</a>
+                                </li>
+                                <li>
+                                    <a href="../../tp4/eje5/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio </span>5</a>
+                                </li>
+                                <li>
+                                    <a href="../../tp4/eje6/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 6</a>
+                                </li>
+                                <li>
+                                    <a href="../../tp4/eje7/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 7</a>
+                                </li>
+                                <li>
+                                    <a href="../../tp4/eje8/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 8</a>
+                                </li>
+                                <li>
+                                    <a href="../../tp4/eje9/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 9</a>
                                 </li>
                                 <!-- <li>
                                     <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>

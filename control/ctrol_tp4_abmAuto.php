@@ -1,34 +1,48 @@
 <?php
-class ctrol_tp4_ejem{
+class ctrol_tp4_abmAuto{
     //Espera como parametro un arreglo asociativo donde las claves coinciden con los nombres de las variables instancias del objeto
 
     
     /**
      * Espera como parametro un arreglo asociativo donde las claves coinciden con los nombres de las variables instancias del objeto
      * @param array $param
-     * @return Tabla
+     * @return Auto
      */
     private function cargarObjeto($param){
         $obj = null;
            
-        if( array_key_exists('id',$param) and array_key_exists('descript',$param)){
-            $obj = new Tabla();
-            $obj->setear($param['id'], $param['descript']);
+        if( array_key_exists('patente',$param) and array_key_exists('marca',$param) and array_key_exists('modelo',$param) and array_key_exists('dniDuenio',$param) ){
+            $obj = new Auto();
+            $objDuenio = new Persona();
+
+            $where = "NroDni= ".$param['dniDuenio'];
+            $objDuenio = Persona::listar($where);//verificar en ctrol que persona exista!
+            //print_r($objDuenio);
+            $obj->setear(strtoupper($param['patente']),$param['marca'],$param['modelo'],$objDuenio[0]);
         }
         return $obj;
     }
+
+    // public function cambiarDuenio($objAuto,$objPersona){
+    //     $resp = false;
+    //     if($objAuto->getObjPersona()->getNroDni() != $objPersona->getNroDni()){
+    //             $objAuto->setObjPersona($objPersona);
+    //             $resp = true;
+    //     }
+    //     return $resp;
+    // }
     
     /**
      * Espera como parametro un arreglo asociativo donde las claves coinciden con los nombres de las variables instancias del objeto que son claves
      * @param array $param
-     * @return Tabla
+     * @return Auto
      */
     private function cargarObjetoConClave($param){
         $obj = null;
         
-        if( isset($param['id']) ){
-            $obj = new Tabla();
-            $obj->setear($param['id'], null);
+        if( isset($param['patente']) ){
+            $obj = new Auto();
+            $obj->setear($param['patente'],$param['Marca'],$param['Modelo'],null);
         }
         return $obj;
     }
@@ -42,7 +56,7 @@ class ctrol_tp4_ejem{
     
     private function seteadosCamposClaves($param){
         $resp = false;
-        if (isset($param['id']))
+        if (isset($param['patente']))
             $resp = true;
         return $resp;
     }
@@ -53,12 +67,13 @@ class ctrol_tp4_ejem{
      */
     public function alta($param){
         $resp = false;
-        $param['id'] = null;
+       // $param['id'] = null;
         $elObjtTabla = $this->cargarObjeto($param);
        //print_r($elObjtTabla);
 //        verEstructura($elObjtTabla);
         if ($elObjtTabla !=null and $elObjtTabla->insertar()){
             $resp = true;
+           
         }
         return $resp;
         
@@ -86,7 +101,7 @@ class ctrol_tp4_ejem{
      * @return boolean
      */
     public function modificacion($param){
-        //echo "Estoy en modificacion";
+        echo "Estoy en modificacion";
         $resp = false;
         if ($this->seteadosCamposClaves($param)){
             $elObjtTabla = $this->cargarObjeto($param);
@@ -100,17 +115,17 @@ class ctrol_tp4_ejem{
     /**
      * permite buscar un objeto
      * @param array $param
-     * @return boolean
+     * @return array
      */
     public function buscar($param){
         $where = " true ";
         if ($param <> NULL){
-            if  (isset($param['id']))
-                $where.=" and id =".$param['id'];
-            if  (isset($param['descript']))
-                 $where.=" and descrip ='".$param['descript']."'";
+            if  (isset($param['patente']))
+                $where.=" and Patente = '".strtoupper($param['patente'])."'";
+            if  (isset($param['dniDuenio']))
+                 $where.=" and DniDuenio ='".$param['dniDuenio']."'";
         }
-        $arreglo = Tabla::listar($where);  
+        $arreglo = Auto::listar($where);  
         return $arreglo;
             
             
