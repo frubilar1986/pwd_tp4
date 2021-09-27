@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-secondary">
-    <!-- SCRIP QUE  REDIRECCIONA A INDEX DEL EJE1 -->
+    <!-- SCRIP QUE  REDIRECCIONA A INDEX DEL EJE111 -->
     <script type="text/javascript"> 
         alert('Inicio mvc');
 
