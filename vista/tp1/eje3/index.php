@@ -8,36 +8,37 @@ include_once "../../estructHtml/cabecera.php";
         <div class="col-lg-10">
             <div class="card shadown-lg p-3 mb-2 bg-white">
                 <!--inicio clase card-->
-                <div class="card-header"> <span class= "text-danger" >Ejercicio 3:</span>  <p>Crear una página php que contenga un formulario HTML como el que se indica en la
-                                        imagen (darle formato con CSS), enviar estos datos por el método Post a otra página php
-                                        que los reciba y muestre por pantalla un mensaje como el siguiente: “Hola, yo soy
-                                        nombre , apellido tengo edad años y vivo en dirección”, usando la información recibida.
-                                        Cambiar el método Post por Get y analizar las diferencias</p><img class ="rounded mx-auto d-block" src="img/ejemplo.png" alt="">
+                <div class="card-header"> <span class="text-danger">Ejercicio 3:</span>
+                    <p>Crear una página php que contenga un formulario HTML como el que se indica en la
+                        imagen (darle formato con CSS), enviar estos datos por el método Post a otra página php
+                        que los reciba y muestre por pantalla un mensaje como el siguiente: “Hola, yo soy
+                        nombre , apellido tengo edad años y vivo en dirección”, usando la información recibida.
+                        Cambiar el método Post por Get y analizar las diferencias</p><img class="rounded mx-auto d-block" src="img/ejemplo.png" alt="">
                 </div>
                 <div class="card-body">
-                    <form action="accion.php" method="post" id="eje3" name="eje3" class="needs-validation" data-toggle='validator' novalidate onsubmit="">
+                    <form action="accion.php" method="post" id="eje3" name="eje3" class="was-validated" data-toggle='validator' novalidate onsubmit="">
                         <div class=" ">
                             <div class="col-md-3 mb-3">
-                                <label class = "form-label" for="nombre">Nombre:</label>
+                                <label class="form-label" for="nombre">Nombre:</label>
                                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" pattern="^[A-Za-z ]*$" autocomplete="off" required>
                                 <div class="valid-feedback"></div>
                                 <div class="invalid-feedback">Campo requerido !!</div>
                             </div>
                             <div class="col-md-3 mb-3 ">
-                                <label class = "mb-1" for="apellido">Apellido:</label>
-                                <input type="text" class="form-control" name="apellido" id="apellido" placeholder="" pattern="^[A-Za-z ]*$" autocomplete="off"  required>
+                                <label class="mb-1" for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" name="apellido" id="apellido" placeholder="" pattern="^[A-Za-z ]*$" autocomplete="off" required>
                                 <div class="valid-feedback"></div>
                                 <div class="invalid-feedback">Campo requerido !!</div>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <label class = "mb-1" for="2">Edad:</label>
-                                <input type="number" class="form-control" name="edad" id="edad" placeholder=""  required>
+                                <label class="mb-1" for="2">Edad:</label>
+                                <input type="number" class="form-control" name="edad" id="edad" placeholder="" required>
                                 <div class="valid-feedback"></div>
                                 <div class="invalid-feedback">Campo requerido !!</div>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <label class = "mb-1" for="3">Direccion:</label>
-                                <input type="text" class="form-control" name="direccion" id="direccion" placeholder="" pattern="^[A-Za-z0-9 ]*$"  required>
+                                <label class="mb-1" for="3">Direccion:</label>
+                                <input type="text" class="form-control" name="direccion" id="direccion" placeholder="" pattern="^[A-Za-z0-9 ]*$" required>
                                 <div class="valid-feedback"></div>
                                 <div class="invalid-feedback">Campo requerido !!</div>
                             </div>
@@ -76,6 +77,6 @@ include_once "../../estructHtml/cabecera.php";
             </div>
             <!--fin clase card-->
             <!-- Footer -->
-           <?php 
-           include_once "../../estructHtml/pie.php";
-           ?>
+            <?php
+            include_once "../../estructHtml/pie.php";
+            ?>

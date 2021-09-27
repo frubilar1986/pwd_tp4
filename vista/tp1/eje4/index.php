@@ -16,7 +16,7 @@ include_once "../../estructHtml/cabecera.php";
                 </div>
                 <div class="card-body">
                     <!-- <form action="accion.php" method="get" id="eje4" name="form_eje4" class="needs-validation" data-toggle="validator " novalidate> -->
-                    <form action="accion.php" method="get" id="eje4" name="eje4" class="needs-validation" data-toggle="validator " novalidate>
+                    <form action="accion.php" method="get" id="eje4" name="eje4" class="was-validated" data-toggle="validator " novalidate>
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="lbl-nro">Nombre:</label>

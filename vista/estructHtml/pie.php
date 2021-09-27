@@ -6,8 +6,8 @@
                     <!-- Call to action -->
                     <ul class="list-unstyled list-inline text-center py-1">
                         <li class="list-inline-item">
-                            <h5 class="mb-1">Rubilar Francisco</h5>
-                            <h5 class="mb-1">FAI-2426</h5>
+                            <h5 class="mb-1 text-danger">Grupo 4</h5>
+                            <h5 class="mb-1"></h5>
                             <h4>Tecnicatura Universitaria en Desarrollo Web</h4>
                         </li>
                         <!-- <li class="list-inline-item">

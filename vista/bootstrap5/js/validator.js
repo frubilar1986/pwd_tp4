@@ -105,11 +105,11 @@ $(function () {
 
         feedbackIcons: {
 
-            valid: 'far fa-check-circle has-success help-success' + 'ok',
+            valid: 'far fa-check-circle has-success help-success',
 
             invalid: 'fa fa-times has-error help-block',
 
-            validating: 'fa fa-circle yessss'
+            validating: 'fa fa-circle '
 
         },
 
@@ -508,7 +508,8 @@ $(function () {
                     stringLength: {
                         min: 5,
                         message: 'debe tener mas de 5 letras <br>'
-                    }
+                    },
+                    
                 }
             },
             apellido: {
@@ -811,7 +812,7 @@ $(function () {
                 group: '.col-md-6',
                 validators: {
                     notEmpty: {
-                        message: 'Cmpo requerido!'
+                        message: 'Campo requerido!'
                     },
                     regexp: {
                         message: 'Solo letras <br>'
@@ -888,11 +889,12 @@ $(function () {
 
         }
 
-    }) //fin validators de tp3eje3   
+    }) //fin validators de tp3eje3  
+        //validacion tp4 ejercicio 4 
     $('#tp4Eje4').bootstrapValidator({
         message:'error de carga',
         feedbackIcons:{
-                valid:'far fa-check-circle has-success help-success',
+                valid:'far fa-check-circle has-success help-success', //bi bi-hand-thumbs-up
 
                 invalid: 'fa fa-times has-error help-block',
     
@@ -1087,6 +1089,35 @@ $(function () {
                     
                 }
             },
+        },
+    });
+    $('#tp4Eje9').bootstrapValidator({
+        message:'error de carga',
+        feedbackIcons:{
+                valid:'far fa-check-circle has-success help-success',
+
+                invalid: 'fa fa-times has-error help-block',
+    
+                validating: 'fa fa-circle '
+        },
+        fields:{
+            nroDni:{
+                group:'.col-md-4',
+                validators:{
+                    notEmpty:{
+                        message:'NO debe estar vacio'
+                    },
+                    regexp:{
+                        message:'Solo numeros <br>'
+                    
+                    },
+                   stringLength:{
+                       min:8,
+                       message:'debe tener 8 caracteres'
+                   }
+                }
+            },
+            
         },
     });
 

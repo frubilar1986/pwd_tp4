@@ -1,4 +1,4 @@
-<!-- Control del ejercicio 2 del practico 1 -->
+<!-- Control del ejercicio 5 del practico 1 -->
 <?php
     class ctrol_eje5{
         /**
@@ -8,11 +8,11 @@
            // print_r($colDatos);
            if ($colDatos['estudios'] == 1) {
                # code...
-               $estudios = "no tiene estudios";
+               $estudios = "sin tiene estudios, ";
            }elseif ($colDatos['estudios'] == 2){
-               $estudios = " estudios primarios completos";
+               $estudios = " estudios primarios completos, ";
            }else{
-               $estudios = "estudios terciarios completos o incompletos";
+               $estudios = "estudios terciarios completos o incompletos, ";
            }
 
            //control del campo sexo

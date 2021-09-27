@@ -23,20 +23,10 @@ include_once "../../estructHtml/cabecera.php";
                     <div class="alert alert-danger">
                         <?php
                         $data = datos_submitidos();
-                        // echo '<br>en accion<br>';
-                        //print_r($data);
+                       
                         $obj8 = new ctrol_eje8();
                         $resp = $obj8->accion($data);
-                        // $obj5 = new ctrol_eje5();
-                        // $obj6 = new ctrol_eje6();
-
-
-                        //    $msj = $obj4->accion($data);
-                        //   $msj .= ", ".$obj5->accion($data);
-                        //   $msj .=$obj6->accion($data);
-
-
-
+                       
                         echo "<h2>Resultado: </h2>";
                         echo "<h1 class='alert alert-primary' >$resp</h1>";
 

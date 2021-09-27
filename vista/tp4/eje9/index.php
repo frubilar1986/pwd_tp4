@@ -21,15 +21,12 @@ $listaDatos = $objAbmTabla->buscar(null);
                 </div>
                 <div class="card-body">
                     <!-- aqui tabla de seleccion de datos recuperados o que persisten desde la base de dato test -->
-                    <form action="accionBuscarPersona.php" method="post" class="needs-validation" data-toggle="" novalidate>
+                    <form action="accionBuscarPersona.php" method="post" id="tp4Eje9" class="was-validated" data-toggle="validator"  novalidate>
                         <div>
-                            <!-- <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Patente</label>
-                                <input type="text" name="patente" class="form-control" id="exampleFormControlInput1" placeholder="" required>
-                            </div> -->
-                            <div class="mb-3">
+                            
+                            <div class="col-md-4 mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Dni Persona</label>
-                                <input type="text" name="nroDni" class="form-control" id="exampleFormControlInput1" placeholder="" required>
+                                <input type="text" name="nroDni" class="form-control" id="exampleFormControlInput1" maxlength="8" pattern="^[0-9]{1,8}$" autocomplete="off" placeholder="" required>
                             </div>
 
                             <div>

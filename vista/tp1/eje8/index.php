@@ -37,48 +37,7 @@ include_once "../../estructHtml/cabecera.php";
                                     <!-- <div class="valid-feedback">OK!</div>
                                     <div class = "invalid-feedback" >Campo requerido !!</div> -->
                                 </div>
-                            <!-- <div class="col-md-3 mb-3">
-                                <label for="lbl- ">1er Numero:</label>
-                                <input type="text" class="form-control" name="nro1" id="nro1" pattern="^[0-9]{1,}" placeholder="Ing Numero" required>
-                                <div class="valid-feedback">Bien!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div> -->
-                            <!-- componente input apellido -->
-                            <!-- <div class="col-md-3 mb-3">
-                                <label for="lbl-ape ">2do Numero:</label>
-                                <input type="text" class="form-control  " name="nro2" id="nro2" pattern="^[0-9]{1,}" placeholder="Ing numero" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div> -->
-                            <!-- componete input edad -->
-                            <!-- <div class="col-md-3 mb-3">
-                                <label for="lbl-nro">Edad:</label>
-                                <input type="number" class="form-control" min="1" max="80" name="edad" id="edad" placeholder="Ing edad" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div> -->
-
-                            <!-- Componente radio button sexo -->
-                            <!-- <fieldset class="col-md-4 border">
-                                <legend class="text-decoration-underline">Sexo/Genero:</legend>
-                                <div class="form-check form-check">
-                                    <input type="radio" class="form-check-input" name="sexo" id="sexoM" value="masculino" required>
-                                    <label for="sexoM">Masculino</label>
-                                    
-                                </div>
-                                <div class="form-check form-check">
-                                    <input type="radio" class="form-check-input" name="sexo" id="sexoF" value="femenino" required>
-                                    <label for="sexoF">Femenino</label>
-                                    <div class="valid-feedback">OK!</div>
-                                    <div class="invalid-feedback">Campo requerido !!</div>
-                                </div>
-                            </fieldset> -->
-                            <!-- <div class="col-md-3 mb-3">
-                                <label for="lbl-nro">Domicilio:</label>
-                                <input type="text" class="form-control" name="domic" id="domic" placeholder="Ing domicilio" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div> -->
+                            
                             <!-- Componente select estudios -->
                             <div class="col-md-4 form-floating">
                                 <select class="form-select" id="floatingSelectGrid" name="estudiante"  required>
@@ -91,19 +50,7 @@ include_once "../../estructHtml/cabecera.php";
                                 <div class="invalid-feedback"> debe seleccionar!</div> -->
                                 <label for="floatingSelectGrid">Seleccione opcion</label>
                             </div>
-                            <!-- <div class="col-md-3 mb3">
-                                <label for="lbl_estudios" class="form-label">Operacion</label>
-                                <select class="form-select" name="estudios" required>
-
-                                    <option selected disabled value="">Seleccione</option>
-                                    <option value="1">Sumar </option>
-                                    <option value="2">Restar</option>
-                                    <option value="3">Multiplicar</option>
-                                    <option value="3">Dividir</option>
-                                </select>
-                                <div class="valid-feedback"> bien!</div>
-                                <div class="invalid-feedback"> debe seleccionar!</div>
-                            </div> -->
+                            
 
                             <div id="alerta" class="alert alert-warning mb-3">
                                 <i class="bi bi-exclamation-triangle"> </i> <span>NO ES POSIBLE LA DIVISION POR CERO!!</span>

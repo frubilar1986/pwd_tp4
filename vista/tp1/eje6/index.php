@@ -34,7 +34,7 @@ include_once "../../estructHtml/cabecera.php";
                             <!-- componete input edad -->
                             <div class="col-md-3 mb-3">
                                 <label for="lbl-nro">Edad:</label>
-                                <input type="number" class="form-control"  name="edad" id="edad" placeholder="Ing edad" required>
+                                <input type="number" class="form-control" name="edad" id="edad" placeholder="Ing edad" required>
                                 <!-- <div class="valid-feedback">OK!</div>
                                 <div class="invalid-feedback"></div> -->
                             </div>
@@ -43,7 +43,7 @@ include_once "../../estructHtml/cabecera.php";
 
                             <fieldset class="col-md-4 border">
                                 <legend class="text-decoration-underline">Sexo/Genero:</legend>
-                                <div class = 'form-check form-check-inline'>
+                                <div class='form-check form-check-inline'>
                                     <div class="">
                                         <input type="radio" class="form-check-input" id="sexof" name="sexo" value="femenino" required>
                                         <label class="form-check-label" for="sexof">Femenino</label>
@@ -55,21 +55,7 @@ include_once "../../estructHtml/cabecera.php";
                                     </div>
                                 </div>
                             </fieldset>
-                            <!-- <fieldset class="col-md-4 border">
-                                <legend class="text-decoration-underline">Sexo/Genero:</legend>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" name="sexo" id="sexoM" value="masculino" required>
-                                    <label for="sexoM">Masculino</label> -->
-                                    <!-- <div class="valid-feedback">OK!</div>
-                                    <div class = "invalid-feedback" >Campo requerido !!</div> -->
-                                <!-- </div>
-                                <div class="form-check form-check">
-                                    <label for="sexoF">Femenino</label>
-                                    <input type="radio" class="form-check-input" name="sexo" id="sexoF" value="femenino" required> -->
-                                    <!-- <div class="valid-feedback">OK!</div>
-                                    <div class="invalid-feedback">Campo requerido !!</div> -->
-                                <!-- </div>
-                            </fieldset> -->
+
                             <div class="col-md-3 mb-3">
                                 <label for="lbl-nro">Domicilio:</label>
                                 <input type="text" class="form-control" name="direccion" id="direccion" pattern="^[A-Za-z0-9 ]*$" placeholder="Ing domicilio" required>
@@ -79,7 +65,7 @@ include_once "../../estructHtml/cabecera.php";
                             <!-- Componente select estudios -->
                             <div class="col-md-3 mb3">
                                 <label for="lbl_estudios" class="form-label">Estudios que posee</label>
-                                <select class="form-select"  name="estudios" required>
+                                <select class="form-select" name="estudios" required>
                                     <!-- <option selected>opciones</option> -->
                                     <option value="">Seleccione</option>
                                     <option value="1">Sin estudios</option>
@@ -122,45 +108,21 @@ include_once "../../estructHtml/cabecera.php";
                                     <!-- testing -->
                                 </div>
 
-                                <!-- <div class="col-md-4 mb-3">
-                                <label for="lbl-nro">Nombre:</label>
-                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ing nombre" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="lbl-ape">Apellido:</label>
-                                <input type="text" class="form-control" name="ape" id="ape" placeholder="Ing apellido" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div>
-                            
-                            <div class="col-md-4 mb-3">
-                                <label for="lbl-nro">Edad:</label>
-                                <input type="number" class="form-control" min="1" max="80" name="edad" id="edad" placeholder="Ing edad" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="lbl-nro">Domicilio:</label>
-                                <input type="text" class="form-control" name="domic" id="domic" placeholder="Ing domicilio" required>
-                                <div class="valid-feedback">OK!</div>
-                                <div class="invalid-feedback">Campo requerido !!</div>
-                            </div> -->
+
 
                             </div>
                             <button class="col-md-12 mt-3 mb-2 btn btn-primary" type="submit">Enviar</button>
                             <button class="col-md-12 mt-1 btn btn-warning" type="reset">Limpiar</button>
                     </form>
                 </div>
-                </div>
-
             </div>
-            <!--fin clase card-->
-            <!-- Footer -->
-            <!-- <script type="text/javascript">
+
+        </div>
+        <!--fin clase card-->
+        <!-- Footer -->
+        <!-- <script type="text/javascript">
                 $('[type!=\'hidden\'][data-val-required]').after('<span style="color:red; font-size: 20px; vertical-align: middle;">*</span>');
             </script> -->
-            <?php
-            include_once "../../estructHtml/pie.php";
-            ?>
+        <?php
+        include_once "../../estructHtml/pie.php";
+        ?>
