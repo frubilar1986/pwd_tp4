@@ -54,14 +54,14 @@ class ctrol_tp4_abmPersona{
      */
     public function alta($param){
         $resp = false;
-        var_dump($param);
+        //var_dump($param);
         //$param['id'] = null;
         $elObjtTabla = $this->cargarObjeto($param);
-       print_r($elObjtTabla);
+      // print_r($elObjtTabla);
 //        verEstructura($elObjtTabla);
         if ($elObjtTabla !=null and $elObjtTabla->insertar()){
             $resp = true;
-            echo"verredadero";
+           // echo"verredadero";
         }
         return $resp;
         
@@ -89,7 +89,7 @@ class ctrol_tp4_abmPersona{
      * @return boolean
      */
     public function modificacion($param){
-        echo "Estoy en modificacion";
+       // echo "Estoy en modificacion";
         $resp = false;
         if ($this->seteadosCamposClaves($param)){
             $elObjtTabla = $this->cargarObjeto($param);
@@ -108,10 +108,10 @@ class ctrol_tp4_abmPersona{
      public function buscar($param){
         $where = " true ";
         if ($param <> NULL){
-            if  (isset($param['NroDni']))
-                $where.=" and NroDni = '".$param['NroDni']."'";
+            if  (isset($param['nroDni']))
+                $where.=" and NroDni = '".$param['nroDni']."'";
             if  (isset($param['apellido']))
-                 $where.=" and Apellido ='".$param['apellido']."'";
+                 $where.=" and Apellido = ".$param['apellido'];
             if  (isset($param['nombre']))
                  $where.=" and nombre ='".$param['nombre']."'";
             if  (isset($param['fechaNac']))

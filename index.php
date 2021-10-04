@@ -19,7 +19,7 @@
     <script type="text/javascript"> 
         alert('Inicio mvc');
 
-        window.location.replace("http://localhost/pwd/tps/vista/tp1/eje1/index.php");
+        window.location.replace("http://localhost/pwd/vista/tp1/eje1/index.php");
         //location.href="http://localhost/pwd/tps/vista/tp1/eje1/index.php";
     </script>
     <br><br>

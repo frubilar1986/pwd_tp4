@@ -10,7 +10,7 @@ $listaDatos = $objAbmTabla->buscar(null);
         <div class="col-lg-10">
             <div class="card shadown-lg p-3 mb-2 bg-white">
                 <!--inicio clase card-->
-                <div class="card-header"><span class="text-danger">Ejercicio 5:</span>
+                <div class="card-header"><span class="text-danger">Ejercicio 5: --LISTAR PERSONAS--</span>
                     <p> Crear una página "listaPersonas.php" que muestre un listado con las personas que se
                         encuentran cargadas y un link a otra página “autosPersona.php” que recibe un dni de una persona y muestra
                         los datos de la persona y un listado de los autos que tiene asociados. Recordar usar la capa de control antes

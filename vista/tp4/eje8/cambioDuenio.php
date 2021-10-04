@@ -22,56 +22,39 @@ include_once "../../estructHtml/cabecera.php";
                         <?php
                         $resp = false;
                         $datosForm = datos_submitidos();
-                        print_r($datosForm);
+                        //print_r($datosForm);
                         $objCtrolAuto = new ctrol_tp4_abmAuto();
                         $objctrolPers = new ctrol_tp4_abmPersona();
                         $arrData['patente'] = $datosForm['patente']; 
                         $arregloAutos = $objCtrolAuto->buscar($arrData);//ctrol si existe patente
-                        print_r($arregloAutos);
+                       // print_r($arregloAutos);
                         if( count($arregloAutos) == 1){
-                            $arrDataP['NroDni'] = $datosForm['dniPersona'];
+                            $arrDataP['nroDni'] = $datosForm['dniPersona'];
                             
                              $arregloPersonas = $objctrolPers->buscar($arrDataP);
-                             print_r($arregloPersonas);
+                             //print_r($arregloPersonas);
                              if (count($arregloPersonas) == 1){
                                     $objAuto = $arregloAutos[0];
                                     $objPersona = $arregloPersonas[0];
-                                //    $resp =  $objCtrolAuto->cambiarDuenio($objAuto,$objPersona);
-                                //    if($resp){
-                                //        $objAuto->modificar();
-                                //    };
+                                
                                     $arrAuto = ['patente'=> $objAuto->getPatente(),
                                                 'marca' => $objAuto->getMarca(),
                                                 'modelo'=> $objAuto->getModelo(),
                                                 'dniDuenio'=>$objPersona->getNroDni()
                                             ];
                                   $resp =  $objCtrolAuto->modificacion($arrAuto);
+                             }else{
+                                echo " <p class = 'h2 alert alert-danger'> Numero de documento ingresado no pertenece a ninguna persona registrada!</p>";
                              }
 
                             // $arrData2['nroDni'] = $arregloAutos[0]->getObjPersona()->getNroDni(); // ctrol si esxiste persona
-                        }   
-                        //if ->si  exite persona
+                        }else{
+                            echo " <p class = 'h2 alert alert-danger'> Patente ingresada no pertenece a ningun auto registrado.!</p>";
+                        }
 
-                        //$objCtrol = new ctrol_tp4_abmAuto();
-                       // $arrData['patente'] = $datosForm['patente']; //ctrol si existe patente
-                       // $arregloAutos = $objCtrol->buscar($arrData);
-                       // $objctrolPers = new ctrol_tp4_abmPersona();
-                       // $arrData2['nroDni'] = $arregloAutos[0]->getObjPersona()->getNroDni(); // ctrol si esxiste persona
-                       // $arregloPersonas = $objctrolPers->buscar($arrData2);
-                        //si exite
-                       // $objCtrol->alta($datosForm);
-
-                        //sino existe mensaje y link para crear persona ejercicio 6
-                       // var_dump($arregloPersonas[0]);
-                       // var_dump($arregloAutos);
-                        // //mesaje existe
-                        // $objCtrol->alta($datosForm);
-
-                        // echo '<br>';
-                        // $obj = new ctrol_tp4_abmAuto();
-                        // $objAuto = $obj->buscar($datosForm);
-                        // $auto = $objAuto[0];
-                        //print_r($auto);
+                            if($resp){
+                                echo " <p class = 'h2 alert alert-success'> El cambio de due&ntilde;o se realizo con exito!.</p>";
+                            }
                         ?>
 
                         <?php

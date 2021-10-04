@@ -159,10 +159,10 @@ class Persona {
             $arreglo = array();
             $db = new dataBase();
             $sql="SELECT * FROM persona ";
+            
             if ($parametro!="") {
-                $sql.='WHERE '.$parametro;
+                $sql.=' WHERE '.$parametro;
             }
-            //echo $sql;
             $res = $db->Ejecutar($sql);
             if($res > -1){
                 if($res > 0){

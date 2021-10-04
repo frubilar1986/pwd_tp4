@@ -1,8 +1,7 @@
 <!-- index -->
 <?php $titulo = "Ejemplo PDO";
 include_once "../../estructHtml/cabecera.php";
-$objAbmTabla = new ctrol_tp4_ejem();
-$listaDatos = $objAbmTabla->buscar(null);
+
 ?>
 <div class="col-lg-12 py-1 px-1">
     <div class="">
@@ -17,13 +16,17 @@ $listaDatos = $objAbmTabla->buscar(null);
                     <!-- aqui tabla de seleccion de datos recuperados o que persisten desde la base de dato test -->
                     <p class='h3 text-info text-center'>Lista de datos</p>
                     <table class="table table-success table-hover ">
+                        <th>ID</th>
                         <th>Descripcion</th>
                         <th>Modificar</th>
                         <th>Eliminar registro</th>
                         <?php 
+                        $objAbmTabla = new ctrol_tp4_ejem();
+                        $listaDatos = $objAbmTabla->buscar(null);
                             if (count($listaDatos) > 0){
                                 foreach($listaDatos as $objDatos){
-                                    echo "<tr ><td>".$objDatos->getDescrip()."</td>" ; 
+                                    echo "<tr ><td>".$objDatos->getId()."</td>" ; 
+                                    echo "<td>".$objDatos->getDescrip()."</td>" ; 
                                     echo "<td><a class='link-primary' href='editar.php?id=".$objDatos->getId()."'>Editar</a></td>" ; 
                                     echo "<td><a class='link-danger' href='accion.php?accion=borrar&id=".$objDatos->getId()."'>Borrar</a></td></tr>" ; 
                                 }

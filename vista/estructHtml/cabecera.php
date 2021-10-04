@@ -163,25 +163,25 @@
                                     <a href="../../tp4/ejemplo/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejemplo </span> </a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje3/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio </span>3</a>
+                                    <a href="../../tp4/eje3/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ver autos </span> </a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje4/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio </span>4</a>
+                                    <a href="../../tp4/eje4/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Buscar Autos </span></a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje5/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio </span>5</a>
+                                    <a href="../../tp4/eje5/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Listar Personas </span></a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje6/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 6</a>
+                                    <a href="../../tp4/eje6/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Nueva Persona</span> </a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje7/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 7</a>
+                                    <a href="../../tp4/eje7/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Nuevo Auto</span> </a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje8/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 8</a>
+                                    <a href="../../tp4/eje8/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Cambio Due&ntilde;o</span> </a>
                                 </li>
                                 <li>
-                                    <a href="../../tp4/eje9/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Ejercicio</span> 9</a>
+                                    <a href="../../tp4/eje9/index.php" class="nav-link px-0"> <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Buscar Persona</span> </a>
                                 </li>
                                 <!-- <li>
                                     <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>

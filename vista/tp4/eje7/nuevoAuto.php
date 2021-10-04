@@ -22,35 +22,35 @@ include_once "../../estructHtml/cabecera.php";
                     <div class="alert alert-info">
                         <?php
                         $resp = false;
+                        // $texto = "Ya existe el auto con esa patente";
                         $datosForm = datos_submitidos();
                         //print_r($datosForm);
-                         $objCtrol = new ctrol_tp4_abmAuto();
-                         $arrData['patente'] = $datosForm['patente'];//ctrol si existe patente
-                        $arregloAutos = $objCtrol->buscar($arrData);
-                        if(count($arregloAutos) == 0){
+                        $objCtrol = new ctrol_tp4_abmAuto();
+                        $where['patente'] = $datosForm['patente']; //ctrol si existe patente
+                        $arregloAutos = $objCtrol->buscar($where);
+                        if (count($arregloAutos) == 0) {
 
                             $objctrolPers = new ctrol_tp4_abmPersona();
-                            $arrData['NroDni'] = $datosForm['dniDuenio'];
+                            $arrData['nroDni'] = $datosForm['dniDuenio'];
                             $arregloPersonas = $objctrolPers->buscar($arrData);
-                            if(count($arregloPersonas) == 0){
-                                echo"<p class='h2'> No existe la persona </p>";
-                                echo "<a class='link-primary' href='../eje6/nuevaPersona.php'>Crear Persona<a>";
+                            if (count($arregloPersonas) == 0) {
+                                // $texto = "No existe la persona para asigna auto":
+                                echo "<p class='h2 alert alert-warning'> No existe la persona. Puede crearla en el siguiente link</p>";
+                                echo "<a class= ' h3 link-primary' href='../eje6?nroDni=".$datosForm['dniDuenio']."'>Crear Persona<a>";
+                                
+                            } else {
+                                $objCtrol->alta($datosForm);
+                                $resp = true;
+                                echo "<p class='h2 alert alert-success'> Auto creado satisfactoriamente! </p>";
                             }
-
-                            $objCtrol->alta($datosForm);
-                            $resp = true;
-                        }
-
-                        if($resp){
-                            echo"<p class='h2 alert alert-success'> Auto creado satisfactoriamente! </p>";
                         }else{
-                            echo"<p class='h2 alert alert-danger'> El auto YA existe en la base de datos! </p>";
+                            echo "<p class='h2 alert alert-danger'> Patente ingresada YA existe en la base de datos! </p>";
+
                         }
-                        
-                        
-                       
+
+
                         ?>
-                        
+
                         <?php
 
                         ?>

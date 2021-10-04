@@ -509,7 +509,7 @@ $(function () {
                         min: 5,
                         message: 'debe tener mas de 5 letras <br>'
                     },
-                    
+
                 }
             },
             apellido: {
@@ -610,7 +610,7 @@ $(function () {
                     regexp: {
                         message: 'Solo letras y numeros <br>'
                     },
-                    
+
                 }
             },
             actores: {
@@ -683,37 +683,37 @@ $(function () {
                     },
                 }
             },
-            genero:{
-                validatore:{
-                    notEmpty:{
-                        message:'Debe seleccionar una opcion!'
+            genero: {
+                validatore: {
+                    notEmpty: {
+                        message: 'Debe seleccionar una opcion!'
                     },
                 }
             },
-            duracion:{
-                group:'.col-md-3',
-                validators:{
-                    notEmpty:{
-                        message:'Campo obligatorio'
+            duracion: {
+                group: '.col-md-3',
+                validators: {
+                    notEmpty: {
+                        message: 'Campo obligatorio'
                     },
-                    between:{
-                        min:30,
-                        max:250,
-                        message:'debe estar entre 30 y 250 los minutos <br>'
+                    between: {
+                        min: 30,
+                        max: 250,
+                        message: 'debe estar entre 30 y 250 los minutos <br>'
                     },
                 }
             },
-            limiteEdad:{
-                validators:{
-                    notEmpty:{
-                        message:'seleccione alguna opcion'
+            limiteEdad: {
+                validators: {
+                    notEmpty: {
+                        message: 'seleccione alguna opcion'
                     }
                 }
             },
-            sinopsis:{
-                validators:{
-                    notEmpty:{
-                        message:'Dato obligatorio'
+            sinopsis: {
+                validators: {
+                    notEmpty: {
+                        message: 'Dato obligatorio'
                     }
                 }
             }
@@ -722,39 +722,39 @@ $(function () {
 
     }) //fin validators de tp2eje4
     $('#form_file1').bootstrapValidator({
-        message:'campo obligatorio',
-        feedbackIcons:{
+        message: 'campo obligatorio',
+        feedbackIcons: {
             valid: 'bi bi-hand-thumbs-up has-success help-success',
             invalid: 'fa fa-times has-error help-block',
             validating: 'fa fa-circle'
         },
-        fields:{
-            fileUp:{
-                validators:{
-                    notEmpty:{
-                        message:'Debe seleccionar un archivo '
+        fields: {
+            fileUp: {
+                validators: {
+                    notEmpty: {
+                        message: 'Debe seleccionar un archivo '
                     }
                 }
             }
         }
-    })//fin validator eje2 tp3
+    }) //fin validator eje2 tp3
     $('#form_file2').bootstrapValidator({
-        message:'campo obligatorio',
-        feedbackIcons:{
+        message: 'campo obligatorio',
+        feedbackIcons: {
             valid: 'bi bi-hand-thumbs-up has-success help-success',
             invalid: 'fa fa-times has-error help-block',
             validating: 'fa fa-circle'
         },
-        fields:{
-            fileUp:{
-                validators:{
-                    notEmpty:{
-                        message:'Debe seleccionar un archivo '
+        fields: {
+            fileUp: {
+                validators: {
+                    notEmpty: {
+                        message: 'Debe seleccionar un archivo '
                     }
                 }
             }
         }
-    })//fin validator eje2 tp3 
+    }) //fin validator eje2 tp3 
     $('#tp3eje3').bootstrapValidator({
         message: '',
         feedbackIcons: {
@@ -844,45 +844,45 @@ $(function () {
                     },
                 }
             },
-            genero:{
-                validatore:{
-                    notEmpty:{
-                        message:'Debe seleccionar una opcion!'
+            genero: {
+                validatore: {
+                    notEmpty: {
+                        message: 'Debe seleccionar una opcion!'
                     },
                 }
             },
-            duracion:{
-                group:'.col-md-3',
-                validators:{
-                    notEmpty:{
-                        message:'Campo obligatorio'
+            duracion: {
+                group: '.col-md-3',
+                validators: {
+                    notEmpty: {
+                        message: 'Campo obligatorio'
                     },
-                    between:{
-                        min:30,
-                        max:250,
-                        message:'debe estar entre 30 y 250 los minutos <br>'
+                    between: {
+                        min: 30,
+                        max: 250,
+                        message: 'debe estar entre 30 y 250 los minutos <br>'
                     },
                 }
             },
-            limiteEdad:{
-                validators:{
-                    notEmpty:{
-                        message:'seleccione alguna opcion'
+            limiteEdad: {
+                validators: {
+                    notEmpty: {
+                        message: 'seleccione alguna opcion'
                     }
                 }
             },
-            fileUp:{
-                group:'.col-md-12',
-                validators:{
-                    notEmpty:{
-                        message:'Debe adjuntar imagen para la portada'
+            fileUp: {
+                group: '.col-md-12',
+                validators: {
+                    notEmpty: {
+                        message: 'Debe adjuntar imagen para la portada'
                     }
                 }
             },
-            sinopsis:{
-                validators:{
-                    notEmpty:{
-                        message:'Dato obligatorio'
+            sinopsis: {
+                validators: {
+                    notEmpty: {
+                        message: 'Dato obligatorio'
                     }
                 }
             }
@@ -890,234 +890,242 @@ $(function () {
         }
 
     }) //fin validators de tp3eje3  
-        //validacion tp4 ejercicio 4 
+    //validacion tp4 ejercicio 4 
     $('#tp4Eje4').bootstrapValidator({
-        message:'error de carga',
-        feedbackIcons:{
-                valid:'far fa-check-circle has-success help-success', //bi bi-hand-thumbs-up
+        message: 'error de carga',
+        feedbackIcons: {
+            valid: 'far fa-check-circle has-success help-success', //bi bi-hand-thumbs-up
 
-                invalid: 'fa fa-times has-error help-block',
-    
-                validating: 'fa fa-circle '
+            invalid: 'fa fa-times has-error help-block',
+
+            validating: 'fa fa-circle '
         },
-        fields:{
-            patente:{
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+        fields: {
+            patente: {
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Cumplir formato AAA 999 <br>'
+                    regexp: {
+                        message: 'Cumplir formato AAA 999 <br>'
                     },
-                    stringLength:{
-                        max:7,
-                        message:'Debe tener 6 caracteres'
+                    stringLength: {
+                        max: 7,
+                        message: 'Debe tener 6 caracteres'
                     }
                 }
             }
         },
     });
     $('#tp4Eje6').bootstrapValidator({
-        message:'error de carga',
-        feedbackIcons:{
-                valid:'far fa-check-circle has-success help-success',
+        message: 'error de carga',
+        feedbackIcons: {
+            valid: 'far fa-check-circle has-success help-success',
 
-                invalid: 'fa fa-times has-error help-block',
-    
-                validating: 'fa fa-circle '
+            invalid: 'fa fa-times has-error help-block',
+
+            validating: 'fa fa-circle '
         },
-        fields:{
-            nroDni:{
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+        fields: {
+            nroDni: {
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Solo numeros <br>'
+                    regexp: {
+                        message: 'Solo numeros <br>'
                     },
-                    stringLength:{
-                        max:8,
-                        message:'No Debe tener mas de 8 numeros'
+                    stringLength: {
+                        min:7,
+                        max: 8,
+                        message: ' Debe tener entre 7 y 8 numeros'
                     },
-                    
+
                 },
 
             },
-            apellido:{
-                validators:{
-                    notEmpty:{
-                        message:"No debe estar vacio"
+            apellido: {
+                validators: {
+                    notEmpty: {
+                        message: "No debe estar vacio"
                     },
-                    regexp:{
-                        message:"Solo letras"
+                    regexp: {
+                        message: "Solo letras"
                     }
                 }
             },
-            nombre:{
-                validators:{
-                    notEmpty:{
-                        message:"No debe estar vacio"
+            nombre: {
+                validators: {
+                    notEmpty: {
+                        message: "No debe estar vacio"
                     },
-                    regexp:{
-                        message:"Solo letras"
+                    regexp: {
+                        message: "Solo letras"
                     }
                 }
             },
-            telefono:{
-                validators:{
-                    notEmpty:{
-                        message:"No debe estar vacio"
+            telefono: {
+                validators: {
+                    notEmpty: {
+                        message: "No debe estar vacio"
                     },
-                    regexp:{
-                        message:"Solo Solo numeros"
+                    regexp: {
+                        message: "Solo numero o muchos numeros"
                     }
                 }
             },
-            fechaNac:{
-                validators:{
-                    notEmpty:{
-                        message:"No debe estar vacio"
+
+            fechaNac: {
+                validators: {
+
+                    notEmpty: {
+                        message: "No debe estar vacio <br>"
+                    },
+                    date: {
+                        message: 'debe cumplir con el formato YYYY/MM/DD',
+                        format: 'DD/MM/YYYY'
                     },
                     
                 }
+
             },
-            domicilio:{
-                validators:{
-                    notEmpty:{
-                        message:"No debe estar vacio"
+            domicilio: {
+                validators: {
+                    notEmpty: {
+                        message: "No debe estar vacio"
                     },
-                    regexp:{
-                        message:"Solo numeros y letras"
+                    regexp: {
+                        message: "Solo numeros y letras"
                     }
                 }
             },
-            
+
         },
     });
     $('#tp4Eje7').bootstrapValidator({
-        message:'error de carga',
-        feedbackIcons:{
-                valid:'far fa-check-circle has-success help-success',
+        message: 'error de carga',
+        feedbackIcons: {
+            valid: 'far fa-check-circle has-success help-success',
 
-                invalid: 'fa fa-times has-error help-block',
-    
-                validating: 'fa fa-circle '
+            invalid: 'fa fa-times has-error help-block',
+
+            validating: 'fa fa-circle '
         },
-        fields:{
-            patente:{
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+        fields: {
+            patente: {
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Cumplir formato AAA 999 <br>'
+                    regexp: {
+                        message: 'Cumplir formato AAA 999 <br>'
                     },
-                    stringLength:{
-                        max:7,
-                        message:'Debe tener 6 caracteres'
+                    stringLength: {
+                        max: 7,
+                        message: 'Debe tener 6 caracteres'
                     }
                 }
             },
-            marca:{
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+            marca: {
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Solo letras <br>'
+                    regexp: {
+                        message: 'Solo letras <br>'
                     },
-                    
+
                 }
             },
-            modelo:{
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+            modelo: {
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Solo letras y numeros <br>'
+                    regexp: {
+                        message: 'Solo letras y numeros <br>'
                     },
-                    
+
                 }
             },
-            dniDuenio:{
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+            dniDuenio: {
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Solo  numeros <br>'
+                    regexp: {
+                        message: 'Solo  numeros <br>'
                     },
-                    
+
                 }
             },
-            
+
         },
     });
     $('#tp4Eje8').bootstrapValidator({
-        message:'error de carga',
-        feedbackIcons:{
-                valid:'far fa-check-circle has-success help-success',
+        message: 'error de carga',
+        feedbackIcons: {
+            valid: 'far fa-check-circle has-success help-success',
 
-                invalid: 'fa fa-times has-error help-block',
-    
-                validating: 'fa fa-circle '
+            invalid: 'fa fa-times has-error help-block',
+
+            validating: 'fa fa-circle '
         },
-        fields:{
-            patente:{
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+        fields: {
+            patente: {
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Cumplir formato AAA 999 <br>'
+                    regexp: {
+                        message: 'Cumplir formato AAA 999 <br>'
                     },
-                    stringLength:{
-                        max:7,
-                        message:'Debe tener 6 caracteres'
+                    stringLength: {
+                        max: 7,
+                        message: 'Debe tener 6 caracteres'
                     }
                 }
             },
-            dniPersona:{
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+            dniPersona: {
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Solo  numeros <br>'
+                    regexp: {
+                        message: 'Solo  numeros <br>'
                     },
-                    
+
                 }
             },
         },
     });
     $('#tp4Eje9').bootstrapValidator({
-        message:'error de carga',
-        feedbackIcons:{
-                valid:'far fa-check-circle has-success help-success',
+        message: 'error de carga',
+        feedbackIcons: {
+            valid: 'far fa-check-circle has-success help-success',
 
-                invalid: 'fa fa-times has-error help-block',
-    
-                validating: 'fa fa-circle '
+            invalid: 'fa fa-times has-error help-block',
+
+            validating: 'fa fa-circle '
         },
-        fields:{
-            nroDni:{
-                group:'.col-md-4',
-                validators:{
-                    notEmpty:{
-                        message:'NO debe estar vacio'
+        fields: {
+            nroDni: {
+                group: '.col-md-4',
+                validators: {
+                    notEmpty: {
+                        message: 'NO debe estar vacio'
                     },
-                    regexp:{
-                        message:'Solo numeros <br>'
-                    
+                    regexp: {
+                        message: 'Solo numeros <br>'
+
                     },
-                   stringLength:{
-                       min:8,
-                       message:'debe tener 8 caracteres'
-                   }
+                    stringLength: {
+                        min: 8,
+                        message: 'debe tener 8 caracteres'
+                    }
                 }
             },
-            
+
         },
     });
 

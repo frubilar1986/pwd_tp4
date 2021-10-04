@@ -1,8 +1,7 @@
 <!-- index -->
 <?php $titulo = "Ejemplo PDO";
 include_once "../../estructHtml/cabecera.php";
-$objAbmAuto = new ctrol_tp4_abmAuto();
-$listaDatos = $objAbmAuto->buscar(null);
+
 ?>
 <div class="col-lg-12 py-1 px-1">
     <div class="">
@@ -22,6 +21,8 @@ $listaDatos = $objAbmAuto->buscar(null);
                     <table class="table table-success table-hover ">
                        
                         <?php
+                        $objAbmAuto = new ctrol_tp4_abmAuto();
+                        $listaDatos = $objAbmAuto->buscar(null);
                         if (count($listaDatos) > 0) {
                            echo" <th>Matricula</th> ";
                            echo" <th>Marca</th>";

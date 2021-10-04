@@ -28,7 +28,7 @@ if( isset($datosForm['id'])){
                     <!-- aqui formulario para nuevo registro -->
                     <?php if ($obj != null) {?>
                     <form method="post" action="accion.php" name="tp4Ejem" class="needs-validation" data-toggle='' novalidate onsubmit="">
-                        <p>Datos selecionados para modificar</p>
+                        <p>Datos selecionado para modificar</p>
                         <div class="col-md-2" >                            
                             <label for="" class="form-label"> ID </label>
                             <input class="form-control" type="text" readonly name="id" id="id" value="<?php echo $obj->getId()?>">
@@ -37,11 +37,7 @@ if( isset($datosForm['id'])){
                             <label for=""class="form-label">Descripcion:</label>
                             <textarea name="descript" id="descript" class="form-control mb-2" cols="5" rows="3"><?php echo $obj->getDescrip()?></textarea>
                         </div>
-                        <!-- <p>Ingresar una descripcion para insertar en base de datos</p>
-                        <div class="form-floating mb-3 col-md-6">
-                            <input type="text" class="form-control" name='descript' id="floatingInput" placeholder="name@example.com" required>
-                            <label for="floatingInput">Descripcion</label>
-                        </div>-->
+                        
                         <input type="hidden" value="editar" name="accion">
                         <input type="submit" class="btn btn-primary mb-2" name="" id="" value="Enviar" > 
 

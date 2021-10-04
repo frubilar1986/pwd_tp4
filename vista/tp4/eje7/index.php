@@ -10,7 +10,7 @@ $listaDatos = $objAbmTabla->buscar(null);
         <div class="col-lg-10">
             <div class="card shadown-lg p-3 mb-2 bg-white">
                 <!--inicio clase card-->
-                <div class="card-header"><span class="text-danger">Ejeercicio 7:</span>
+                <div class="card-header"><span class="text-danger">Ejercicio 7: --- nuevo auto---</span>
                     <p> Crear una página “NuevoAuto.php” que contenga un formulario en el que se permita cargar
                         todos los datos de un auto (incluso su dueño). Estos datos serán enviados a una página
                         “accionNuevoAuto.php” que cargue un nuevo registro en la tabla auto de la base de datos. Se debe chequear
@@ -35,7 +35,7 @@ $listaDatos = $objAbmTabla->buscar(null);
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Modelo</label>
-                                    <input type="text" name="modelo" class="form-control" id="exampleFormControlInput1" pattern="^[A-Za-z0-9 ]*$" placeholder="" required>
+                                    <input type="number" name="modelo" class="form-control" id="exampleFormControlInput1" pattern="^[A-Za-z0-9 ]*$" placeholder="" required>
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
@@ -49,6 +49,36 @@ $listaDatos = $objAbmTabla->buscar(null);
                             </div>
                         </div>
                     </form>
+                    <!-- lista de personas existentes -->
+                    <hr>
+                    <table class="table table-success table-hover ">
+                        <?php
+                        $ctrol = new ctrol_tp4_abmPersona;
+                        // $where['apellido'] = "Apellido";
+                        
+                        $listaDatos = $ctrol->buscar(null);
+                       
+                        if (count($listaDatos) > 0) {
+                            echo "<th>Apellido</th>";
+                            echo "<th>Nombre</th>";
+                            echo "<th>Domicilio</th>";
+                            echo "<th>Nro Documento</th>";
+                            // echo "<th>Ver Vehiculo</th>";
+
+                            foreach ($listaDatos as $objDatos) {
+                                echo"<tr><td>".$objDatos->getApellido() ."</td>";
+                                echo"<td>".$objDatos->getNombre(). "</td>";
+                                echo"<td>".$objDatos->getDomicilio(). "</td>";
+                                echo"<td>".$objDatos->getNroDni(). "</td>";
+                                // echo "<tr ><td>" . $objDatos->getDescrip() . "</td>";
+                                // echo "<td><a class='link-primary' href='autosPersonas.php?nroDni=" . $objDatos->getNroDni() . "'>Vehiculo</a></td></tr>";
+                                // echo "<td><a class='link-danger' href='accion.php?accion=borrar&id=" . $objDatos->getId() . "'>Borrar</a></td></tr>";
+                            }
+                        }else{
+                            echo "<p class='h2 alert alert-warning' >Sin registros dentro de la base de datos</p>";
+                        }
+                        ?>
+                    </table>
                 </div><!-- fin contenedor card-body del formulario -->
 
 

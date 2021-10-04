@@ -15,7 +15,7 @@ class ctrol_tp4_abmAuto{
             $obj = new Auto();
             $objDuenio = new Persona();
 
-            $where = "NroDni= ".$param['dniDuenio'];
+            $where = "nroDni = ".$param['dniDuenio'];
             $objDuenio = Persona::listar($where);//verificar en ctrol que persona exista!
             //print_r($objDuenio);
             $obj->setear(strtoupper($param['patente']),$param['marca'],$param['modelo'],$objDuenio[0]);
@@ -101,7 +101,7 @@ class ctrol_tp4_abmAuto{
      * @return boolean
      */
     public function modificacion($param){
-        echo "Estoy en modificacion";
+       // echo "Estoy en modificacion";
         $resp = false;
         if ($this->seteadosCamposClaves($param)){
             $elObjtTabla = $this->cargarObjeto($param);

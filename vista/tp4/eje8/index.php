@@ -1,8 +1,8 @@
 <!-- index -->
 <?php $titulo = "Ejemplo PDO";
 include_once "../../estructHtml/cabecera.php";
-$objAbmTabla = new ctrol_tp4_abmPersona();
-$listaDatos = $objAbmTabla->buscar(null);
+// $objAbmTabla = new ctrol_tp4_abmPersona();
+// $listaDatos = $objAbmTabla->buscar(null);
 ?>
 <div class="col-lg-12 py-1 px-1">
     <div class="">
@@ -20,7 +20,7 @@ $listaDatos = $objAbmTabla->buscar(null);
                 </div>
                 <div class=" d-flex justify-content-center card-body">
                     <!-- aqui tabla de seleccion de datos recuperados o que persisten desde la base de dato test -->
-                    <form action="cambioDuenio.php" method="post" id="tp4Eje8" class="needs-validation" data-toggle="validator" novalidate>
+                    <form action="cambioDuenio.php" method="post" id="tp4Eje8" class="was-validated" data-toggle="validator" novalidate>
                         <div class=''>
                             <div class='row'>
                                 <div class="col-md-6 mb-3">
@@ -42,8 +42,36 @@ $listaDatos = $objAbmTabla->buscar(null);
                             </div>
                         </div>
                     </form>
-
+                    <hr>
+                   
                 </div><!-- fin contenedor card-body del formulario -->
+                 <!-- lista de autos  -->
+                 <table class="table table-success table-hover ">
+                       
+                       <?php
+                       $objAbmAuto = new ctrol_tp4_abmAuto();
+                       $listaDatos = $objAbmAuto->buscar(null);
+                       if (count($listaDatos) > 0) {
+                          echo" <th>Matricula</th> ";
+                          echo" <th>Marca</th>";
+                          echo" <th>Modelo</th>";
+                        //   echo" <th>Nombre Propietario</th>";
+                          echo" <th> Propietario</th>";
+                          echo" <th> DNI</th>";
+                           foreach ($listaDatos as $objDatos) {
+                               echo "<tr ><td>" . $objDatos->getPatente() . "</td>";
+                               echo "<td>" . $objDatos->getMarca() . "</td>";
+                               echo "<td>" . $objDatos->getModelo() . "</td>";
+                               echo "<td>" . $objDatos->getObjPersona()->getNombre() .", ".  $objDatos->getObjPersona()->getApellido() . "</td>";
+                               echo "<td>" . $objDatos->getObjPersona()->getNroDni() . "</td></tr>";
+                              
+                               
+                           }
+                       }else{
+                          echo " <p class='h2 alert alert-danger text-center' >Sin sin registro en la basa de datos</p>";
+                       }
+                       ?>
+                   </table>
 
 
             </div>

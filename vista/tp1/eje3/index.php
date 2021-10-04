@@ -16,7 +16,7 @@ include_once "../../estructHtml/cabecera.php";
                         Cambiar el método Post por Get y analizar las diferencias</p><img class="rounded mx-auto d-block" src="img/ejemplo.png" alt="">
                 </div>
                 <div class="card-body">
-                    <form action="accion.php" method="post" id="eje3" name="eje3" class="was-validated" data-toggle='validator' novalidate onsubmit="">
+                    <form action="accion.php" method="get" id="eje3" name="eje3" class="was-validated" data-toggle='validator' novalidate onsubmit="">
                         <div class=" ">
                             <div class="col-md-3 mb-3">
                                 <label class="form-label" for="nombre">Nombre:</label>
